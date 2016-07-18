@@ -145,7 +145,8 @@ a {
     width: 300px; }
 
 .content {
-  margin: auto;
+  margin: 10px auto;
+  width: 80%;
   padding: 40px; }
 
 #heada {
@@ -158,7 +159,12 @@ a {
     margin: 20px auto; }
     .comments .post p {
       border: 1px solid #F4AFC2;
-      padding: 20px; }
+      padding: 20px;
+      font-family: helvetica neue;
+      letter-spacing: 1px;
+      text-transform: none;
+      font-weight: 100;
+      font-size: 90%; }
 
 .hova {
   color: #fff;
@@ -170,10 +176,22 @@ a {
 .item:hover + .hova {
   display: inline; }
 
-button {
+button, .reply {
   text-transform: uppercase !important;
   padding: 15px;
   background-color: #fff;
   border: 1px solid #AED4DD; }
+  button:hover, .reply:hover {
+    cursor: pointer;
+    opacity: 0.4; }
+
+#press {
+  bottom: 0px !important;
+  margin: 15px; }
+
+input {
+  height: 150px;
+  width: 50%;
+  margin: auto; }
 
 /*# sourceMappingURL=output.css.map */
