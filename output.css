@@ -22,7 +22,7 @@
   .content {
     margin: 0 auto !important;
     padding: 0px !important;
-    width: 99% !important; }
+    width: 80% !important; }
     .content .item {
       width: 100% !important;
       margin: 0 auto;
@@ -153,8 +153,9 @@ a {
   font-size: 35px; }
 
 .comments {
-  width: 70%;
-  margin: 20px auto; }
+  width: 80%;
+  margin: auto !important;
+  padding: 0px !important; }
   .comments .post {
     margin: 20px auto; }
     .comments .post p {
