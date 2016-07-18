@@ -1,0 +1,179 @@
+@media (min-width: 300px) and (max-width: 740px) {
+  .thumb {
+    width: 100% !important;
+    margin: 5px !important;
+    margin: auto !important;
+    height: auto; }
+
+  .item {
+    display: block !important; }
+    .item h2 {
+      margin-top: 15px !important;
+      text-align: center; }
+
+  .main {
+    padding: 0px !important;
+    width: 95% !important;
+    margin: 0 auto !important; }
+    .main .comments {
+      width: 90% !important;
+      margin: 20px auto; }
+
+  .content {
+    margin: 0 auto !important;
+    padding: 0px !important;
+    width: 99% !important; }
+    .content .item {
+      width: 100% !important;
+      margin: 0 auto;
+      padding: 0px; }
+      .content .item #image1, .content .item #image2, .content .item #image3, .content .item #image4 {
+        width: 99% !important;
+        margin: auto !important; }
+
+  h1, #menu {
+    display: block !important; }
+
+  #menu ul {
+    text-align: center;
+    margin: auto;
+    padding: 0px !important; } }
+@font-face {
+  font-family: "Moons";
+  src: url("fonts/moons.otf"); }
+@font-face {
+  font-family: "MoonsIT";
+  src: url("fonts/TT-Moons-Thin-Italic-DEMO.otf"); }
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Moons';
+  color: #484747; }
+  body a {
+    text-decoration: none;
+    color: inherit; }
+
+#menu {
+  height: 80px;
+  display: inline-block; }
+  #menu ul {
+    margin-bottom: 10px; }
+    #menu ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 30px;
+      text-transform: uppercase;
+      text-align: center; }
+
+.main {
+  margin: auto;
+  width: 100%; }
+  .main .blog {
+    margin: 30px auto;
+    height: 550px;
+    background: url("images/five.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: scroll; }
+
+h1 {
+  font-size: 55px;
+  line-height: 50%;
+  margin: 20px;
+  color: #484747;
+  display: inline-block;
+  margin-bottom: 5px !important;
+  font-family: MoonsIT;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center; }
+  h1:hover {
+    color: #F4AFC2;
+    opacity: 0.4; }
+
+a {
+  cursor: pointer; }
+  a:hover {
+    opacity: 0.4; }
+
+.item {
+  display: inline-block;
+  padding: 20px; }
+  .item .thumb {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    float: left;
+    z-index: -1; }
+    .item .thumb #image1 {
+      width: 400px;
+      height: 400px;
+      background-image: url("images/two.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .item .thumb #image2 {
+      width: 400px;
+      height: 400px;
+      background-image: url("images/three.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .item .thumb #image3 {
+      width: 400px;
+      height: 400px;
+      background-image: url("images/four.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .item .thumb #image4 {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      background-image: url("images/six.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+  .item h2 {
+    display: inline-block;
+    margin: 20px; }
+  .item p {
+    display: block;
+    float: left;
+    margin: 20px;
+    width: 300px; }
+
+.content {
+  margin: auto;
+  padding: 40px; }
+
+#heada {
+  font-size: 35px; }
+
+.comments {
+  width: 70%;
+  margin: 20px auto; }
+  .comments .post {
+    margin: 20px auto; }
+    .comments .post p {
+      border: 1px solid #F4AFC2;
+      padding: 20px; }
+
+.hova {
+  color: #fff;
+  font-size: 50px;
+  padding: 15px;
+  text-transform: uppercase;
+  z-index: 1; }
+
+.item:hover + .hova {
+  display: inline; }
+
+button {
+  text-transform: uppercase !important;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #AED4DD; }
+
+/*# sourceMappingURL=output.css.map */
