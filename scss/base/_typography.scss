@@ -1,0 +1,10 @@
+@mixin font-face($name, $file) {
+    $filepath: "../../fonts/" + $file;
+    @font-face {
+        font-family: "#{$name}";
+        src: url($filepath + ".otf");
+    }
+}
+
+@include font-face(Moons, moons);
+@include font-face(MoonsIT, TT-Moons-Thin-Italic-DEMO);

@@ -1,0 +1,25 @@
+@mixin keyframes($fade-in) {
+  @-webkit-keyframes #{$fade-in} {
+    @content;
+  }
+  @-moz-keyframes #{$fade-in} {
+    @content;
+  }
+  @-ms-keyframes #{$fade-in} {
+    @content;
+  }
+  @-o-keyframes #{$fade-in} {
+    @content;
+  }
+  @keyframes #{$fade-in} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}

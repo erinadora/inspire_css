@@ -1,0 +1,104 @@
+.content {
+  margin: 10px auto;
+  width: 80%;
+  padding: 40px;
+  @media screen and (min-width: 740px){
+    margin: 0 auto!important;
+    padding: 0px!important;
+    width: 99%!important;
+  }
+}
+
+.item {
+  display: inline-block;
+  padding: 20px;
+  @media screen and (min-width: 740px){
+    width:100%!important;
+    margin: 0 auto;
+    padding:0px;
+  }
+
+  .thumb {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    float: left;
+    z-index: -1;
+    @media screen and (min-width: 740px){
+      width: 100%!important;
+      margin: 5px!important;
+      margin: auto!important;
+      height: auto;
+    }
+
+    #image1 {
+      width: 400px;
+      height: 400px;
+      background-image: url('../../images/two.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #image2 {
+      width: 400px;
+      height: 400px;
+      background-image: url('../images/three.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #image3 {
+      width: 400px;
+      height: 400px;
+      background-image: url('../images/four.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #image4 {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      background-image: url('../images/six.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-width: 740px){
+    #image1, #image2, #image3, #image4 {
+      width: 99%!important;
+      margin: auto!important;
+    }
+  }
+
+  h2 {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  p {
+    display: block;
+    float: left;
+    margin: 20px;
+    width: 300px;
+  }
+}
+
+.hova {
+  // display: none;
+  color: #fff;
+  font-size: 50px;
+  padding: 15px;
+  // line-height: 700%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.item:hover + .hova {
+  display: inline;
+}
