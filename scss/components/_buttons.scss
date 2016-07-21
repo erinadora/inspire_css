@@ -1,0 +1,27 @@
+button {
+  text-transform: uppercase!important;
+  padding: 15px;
+  border: 1px solid $blue;
+  @include alpha-background-color(rgba($rose, 0.5), white);
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.4;
+  }
+}
+
+.reply {
+  @extend button;
+  @include alpha-background-color(rgba($sand, 0.5), white);
+}
+
+#press {
+  bottom: 0px!important;
+  margin: 15px;
+}
+
+input {
+  height: 150px;
+  width: 50%;
+  margin: auto;
+}

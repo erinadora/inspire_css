@@ -1,0 +1,23 @@
+#menu {
+  height: 80px;
+  display: inline-block;
+  @include keyframes(slide-down 5s 3);
+  @include phone {
+    display: block;
+  }
+  ul {
+    margin-bottom: 10px;
+    @include phone {
+      text-align: center;
+      margin: auto;
+      padding: 0px!important;
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 30px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}

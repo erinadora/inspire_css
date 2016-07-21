@@ -1,19 +1,27 @@
-@mixin keyframes($fade-in) {
-  @-webkit-keyframes #{$fade-in} {
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
     @content;
   }
-  @-moz-keyframes #{$fade-in} {
+  @-moz-keyframes #{$animation-name} {
     @content;
   }
-  @-ms-keyframes #{$fade-in} {
+  @-ms-keyframes #{$animation-name} {
     @content;
   }
-  @-o-keyframes #{$fade-in} {
+  @-o-keyframes #{$animation-name} {
     @content;
   }
-  @keyframes #{$fade-in} {
+  @keyframes #{$animation-name} {
     @content;
-  }
+}
 }
 
 @mixin animation($str) {
@@ -22,4 +30,24 @@
   -ms-animation: #{$str};
   -o-animation: #{$str};
   animation: #{$str};
+}
+
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
+@mixin tablet {
+  @media (min-width: #{$phone}) and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
 }

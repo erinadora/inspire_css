@@ -4,7 +4,7 @@
   .comments {
     width: 70%;
     margin: 20px auto;
-    @media screen and (min-width: 740px){
+    @include phone {
       width: 90%!important;
       margin: 20px auto;
     }
@@ -22,31 +22,4 @@
       font-size: 90%;
     }
   }
-}
-
-button {
-  text-transform: uppercase!important;
-  padding: 15px;
-  background-color: #fff;
-  border: 1px solid $blue;
-
-  &:hover {
-    cursor: pointer;
-    opacity: 0.4;
-  }
-}
-
-.reply {
-  @extend button;
-}
-
-#press {
-  bottom: 0px!important;
-  margin: 15px;
-}
-
-input {
-  height: 150px;
-  width: 50%;
-  margin: auto;
 }
